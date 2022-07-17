@@ -1,0 +1,11 @@
+#!/usr/bin/sh
+
+cmd=./target/command-1.0.0-SNAPSHOT-runner
+#'java -jar target/quarkus-app/quarkus-run.jar'
+
+${cmd} property set -p fr.p1 -v foo
+${cmd} config prepare
+${cmd} config copilote set cop2HMN
+${cmd} run
+
+${cmd} run -h
