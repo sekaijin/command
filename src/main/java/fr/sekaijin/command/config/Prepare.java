@@ -7,8 +7,9 @@ import picocli.CommandLine.Command;
 public class Prepare extends AbstractCommand {
 
     @Override
-    public void run() {
+    public Integer call() {
     	log.info("initialize config data base");
+        return 0;
     }
 
 }

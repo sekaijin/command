@@ -14,8 +14,10 @@ public class PropSet extends AbstractCommand {
     String value;
 
     @Override
-    public void run() {
+    public Integer call() {
     	log.info("Property set {}={}", name, value);
+        Util.set(name, value);
+        return 0;
     }
 
 }

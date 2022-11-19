@@ -11,7 +11,9 @@ public class PropUnset extends AbstractCommand {
     String name;
 
     @Override
-    public void run() {
+    public Integer call() {
         log.info("Property unset {}", name);
+        Util.unset(name);
+        return 0;
     }
 }

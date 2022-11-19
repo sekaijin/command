@@ -19,8 +19,9 @@ public class SetCopilote extends AbstractCommand {
     Config config;
 
     @Override
-    public void run() {
+    public Integer call() {
     	config.setOut("copilote", name);
+        return 0;
     }
 
 }

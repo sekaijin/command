@@ -19,8 +19,9 @@ public class UnsetCopilote extends AbstractCommand {
     Config config;
 
     @Override
-    public void run() {
+    public Integer call() {
     	config.unsetOut("copilote", name);
+        return 0;
     }
 
 }
